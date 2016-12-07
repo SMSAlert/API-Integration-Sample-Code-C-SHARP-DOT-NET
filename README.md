@@ -16,4 +16,5 @@
 ## How to use  
 
 Smsalert obj = new Smsalert("API_KEY");
+
 obj.sendsms("CVTECH", "9999XXXXXX", "test sms", "ROUTE_NAME");
