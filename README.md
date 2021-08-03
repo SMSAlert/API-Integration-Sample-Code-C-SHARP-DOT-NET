@@ -4,7 +4,11 @@
 
 * apikey : Api Key(This key is unique for every user, youo can obtain it from your smsalert account)
 
-* number : single or multiple mobile numbers(seperated by comma) (10 digit numbers)
+* username : Your SMS Alert account username.
+
+* password : Your SMS Alert account password.
+
+* mobileno : single or multiple mobile numbers(seperated by comma) (10 digit numbers)
 
 * message : Message Content to be sent
 
@@ -14,7 +18,11 @@
 
 
 ## How to use  
-
+//If you want to authenticate using api key.
 Smsalert obj = new Smsalert("API_KEY");
 
+//If you want to authenticate using username and password.
+Smsalert obj = new Smsalert("SMSALERT_USERNAME", "SMSALERT_PASSWORD");
+
+//To send SMS.
 obj.sendsms("CVTECH", "9999XXXXXX", "test sms", "ROUTE_NAME");
