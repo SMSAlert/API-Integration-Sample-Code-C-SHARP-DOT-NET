@@ -18,11 +18,17 @@
 
 
 ## How to use  
-//If you want to authenticate using api key.
-Smsalert obj = new Smsalert("API_KEY");
+ If you want to authenticate using API key.
+```cs
+ Smsalert obj = new Smsalert("API_KEY");
+```
 
-//If you want to authenticate using username and password.
-Smsalert obj = new Smsalert("SMSALERT_USERNAME", "SMSALERT_PASSWORD");
+ If you want to authenticate using Username and Password.
+```cs
+ Smsalert obj = new Smsalert("SMSALERT_USERNAME", "SMSALERT_PASSWORD");
+```
 
-//To send SMS.
-obj.sendsms("CVTECH", "9999XXXXXX", "test sms", "ROUTE_NAME");
+ To send SMS.
+```cs
+ obj.sendsms("CVTECH", "9999XXXXXX", "test sms", "ROUTE_NAME");
+```
